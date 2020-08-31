@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset = "utf-8" />
-        <title>Home Page</title>
-        <link rel="stylesheet" type= "text/css" href= 
-            "{{ url_for('static', filename = 'styles.css') }}">
-    </head>
-    <body>
-        <div class="placeholder">
-            placeholder class
-        </div>
-        <h1>Home Page content</h1>
-    </body>
-</html>
+{% extends "template.html" %}
+
+{% block page_content %}
+    <h1>{{ page_name }} content here!!!</h1>
+{% endblock page_content %}
