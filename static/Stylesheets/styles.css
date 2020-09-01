@@ -1,5 +1,18 @@
 /* NOTE: changes may not immediately be reflected due to browser cache. To clear browser cache
-         for page, use SHIFT + CTRL + R. This should take care of issue. */
+for page, use SHIFT + CTRL + R. This should take care of issue. */
+
+/* Master Styles */
+body {
+    margin: 0px;
+}
+
+.containter {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+/* Navigation Bar Styles */
 .nav-bar{
     display: flex;
     justify-content: space-between;
@@ -34,4 +47,66 @@
 
 .nav-link a:hover {
     color: black
+}
+
+/* Portfolio Page Styles */
+
+.all-portfolio-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;/*creates grid layout with 3cols per row*/
+}
+
+.portfolio-item {
+    position: relative;
+}
+
+.item-img-background {
+    height: 350px;
+    width: 100%;
+    filter: brightness(75%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item-text{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.item-label{
+    width: 50%;
+    margin-bottom: 20px;
+    color:whitesmoke;
+}
+
+.item-text .item-subtitle{
+    transition: 1s;
+    font-weight: 525;
+    color: transparent;
+}
+
+/* only apply styles to item-subtitle class when hovered over */
+.item-text:hover .item-subtitle{
+    font-weight: 525;
+    color: lightgrey;
+}
+
+/* To darken portfolio images when hovered over */
+.item-img-darken{
+    transition: 1s;
+    filter: brightness(25%);
+}
+
+.item-img-brighten{
+    transition: 1s;
+    filter: brightness(75%);   
 }
