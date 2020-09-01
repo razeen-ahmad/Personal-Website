@@ -85,5 +85,28 @@ body {
 .item-label{
     width: 50%;
     margin-bottom: 20px;
-    color: rgb(219, 219, 219);
+    color:whitesmoke;
+}
+
+.item-text .item-subtitle{
+    transition: 1s;
+    font-weight: 525;
+    color: transparent;
+}
+
+/* only apply styles to item-subtitle class when hovered over */
+.item-text:hover .item-subtitle{
+    font-weight: 525;
+    color: lightgrey;
+}
+
+/* To darken portfolio images when hovered over */
+.item-img-darken{
+    transition: 1s;
+    filter: brightness(25%);
+}
+
+.item-img-brighten{
+    transition: 1s;
+    filter: brightness(75%);   
 }
