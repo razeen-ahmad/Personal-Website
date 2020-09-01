@@ -1,5 +1,18 @@
 /* NOTE: changes may not immediately be reflected due to browser cache. To clear browser cache
-         for page, use SHIFT + CTRL + R. This should take care of issue. */
+for page, use SHIFT + CTRL + R. This should take care of issue. */
+
+/* Master Styles */
+body {
+    margin: 0px;
+}
+
+.containter {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+/* Navigation Bar Styles */
 .nav-bar{
     display: flex;
     justify-content: space-between;
@@ -35,3 +48,5 @@
 .nav-link a:hover {
     color: black
 }
+
+/* Portfolio Page Styles */
