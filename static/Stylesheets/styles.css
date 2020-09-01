@@ -50,3 +50,40 @@ body {
 }
 
 /* Portfolio Page Styles */
+
+.all-portfolio-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;/*creates grid layout with 3cols per row*/
+}
+
+.portfolio-item {
+    position: relative;
+}
+
+.item-img-background {
+    height: 350px;
+    width: 100%;
+    filter: brightness(75%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item-text{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.item-label{
+    width: 50%;
+    margin-bottom: 20px;
+    color: rgb(219, 219, 219);
+}
