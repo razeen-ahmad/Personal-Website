@@ -1,4 +1,37 @@
+/* NOTE: changes may not immediately be reflected due to browser cache. To clear browser cache
+         for page, use SHIFT + CTRL + R. This should take care of issue. */
 .nav-bar{
     display: flex;
     justify-content: space-between;
+    padding: 30px
+}
+
+.right-side{
+    display: flex;
+}
+
+.nav-bar > .right-side > div { /* styles to go into all divs within right-side class */
+    margin-right: 20px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    height: 30px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s
+}
+
+.nav-link a {/*only grabbing link inside of nav-link classes */
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link a:hover {
+    color: black
 }
