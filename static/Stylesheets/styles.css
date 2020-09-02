@@ -11,6 +11,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr;
+    margin-top: 62px;
 }
 
 
@@ -20,6 +21,10 @@ body {
     justify-content: space-between;
     padding: 15px;
     background-color: rgb(153, 152, 152);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 500;
 }
 
 .name{
@@ -141,15 +146,14 @@ body {
 
 .profile-image img{
     align-content: center;
-    margin-left: 80px;
-    margin-right: 40px;
-    width: 70%;
-    padding: 10px;
+    padding-top: 30px;
+    width: 100%;
 }
 
 .profile-text{
-    padding: 50px;
-    padding-top: 30px;
+    padding-top: 0px;
+    padding-left: 20px;
+    padding-right: 10px;
 }
 
 .profile-text h1{
@@ -158,9 +162,24 @@ body {
 
 /* Home Page Styles */
 
+.greeting-image{
+    position: relative;
+}
+
 .main-home-image {
-    height: 550px;
+    height: 580px;
     width: 100%;
+    filter: brightness(80%);
     background-size: cover;
     background-position: center;
+}
+
+.greeting-text{
+    position: absolute;
+    top: 30px;
+    left: 230px;
+    color: rgb(238, 238, 198);
+    font-size: xxx-large;
+    font-weight: 800;
+    line-height: 120px;
 }
