@@ -1,5 +1,5 @@
 /* NOTE: changes may not immediately be reflected due to browser cache. To clear browser cache
-for page, use SHIFT + CTRL + R. This should take care of issue. */
+for page, use CTRL + SHIFT + R. This should take care of issue. */
 
 /* Master Styles */
 body {
@@ -23,8 +23,13 @@ body {
 }
 
 .name{
-    /*font-family: 'Pacifico', cursive;*/
     font-size: 18px;
+    color: navy;
+}
+
+.name a{
+    text-decoration: none;
+    color: navy;
 }
 
 .right-side{
@@ -40,7 +45,7 @@ body {
 .nav-link {
     height: 30px;
     border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s
+    transition: border-bottom 0.5s;
 }
 
 .nav-link a {/*only grabbing link inside of nav-link classes */
@@ -50,11 +55,19 @@ body {
 }
 
 .nav-link:hover {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid navy;
 }
 
 .nav-link a:hover {
-    color: black
+    color: navy;
+}
+
+.active-nav-link {
+    border-bottom: 1px solid navy;
+}
+
+.active-nav-link a{
+    color: navy !important;
 }
 
 /* Portfolio Page Styles */
@@ -136,10 +149,11 @@ body {
 
 .profile-text{
     padding: 50px;
+    padding-top: 30px;
 }
 
 .profile-text h1{
-    color: darkolivegreen;
+    color: navy;
 }
 
 /* Home Page Styles */
