@@ -110,3 +110,27 @@ body {
     transition: 1s;
     filter: brightness(75%);   
 }
+
+
+/* About page styles */
+.profile-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-image img{
+    align-content: center;
+    margin-left: 80px;
+    margin-right: 40px;
+    width: 70%;
+    padding: 10px;
+}
+
+.profile-text{
+    padding: 50px;
+}
+
+.profile-text h1{
+    color: darkolivegreen;
+
+}
