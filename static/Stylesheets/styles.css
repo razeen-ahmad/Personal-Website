@@ -278,3 +278,24 @@ body {
     font-weight: 800;
     line-height: 120px;
 }
+.greeting-text a{
+    font-size: x-large;
+    text-decoration: none;
+    padding: 30px 20px;
+    background-color: transparent;
+    border: 3px solid beige;
+    line-height: 0px;
+    color: beige;
+    letter-spacing: 5px;
+    position: absolute;
+    overflow: hidden;
+    display: inline-block;
+    top: 320px;
+    left: 5px;
+}
+
+.greeting-text a:hover{
+    color: navy;
+    transition: 0.5s;
+    border-color: navy;
+}
