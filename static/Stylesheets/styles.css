@@ -34,7 +34,7 @@ body {
 
 .name a{
     text-decoration: none;
-    color: navy;
+    color:navy;
 }
 
 .right-side{
@@ -54,7 +54,7 @@ body {
 }
 
 .nav-link a {/*only grabbing link inside of nav-link classes */
-    color: rgb(216, 216, 216);
+    color: beige;
     text-decoration: none;
     transition: color 0.5s;
 }
@@ -147,17 +147,52 @@ body {
 .profile-image img{
     align-content: center;
     padding-top: 30px;
-    width: 100%;
+    width: 95%;
 }
 
 .profile-text{
     padding-top: 0px;
-    padding-left: 20px;
+    padding-left: 0px;
     padding-right: 10px;
 }
 
 .profile-text h1{
     color: navy;
+}
+
+.resume-heading{
+    text-align: center;
+    color: beige;
+    line-height: 20px;
+}
+
+.resume-heading hr{
+    width: 50%;
+    color: beige;
+}
+
+.education-content{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: top center; 
+}
+
+.umn-logo-image{
+    height: 300px;
+    width: 70%;
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.carlson-content{
+    text-align: left;
+    margin-left: 10px;
+}
+
+.experience-content{
+    margin-top: 0px;
 }
 
 /* Home Page Styles */
