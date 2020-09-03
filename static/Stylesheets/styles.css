@@ -215,6 +215,12 @@ body {
     margin-top: 40px;
 }
 
+.experience-date{
+    float: right;
+    text-align: right;
+    margin-right: 30px;
+}
+
 .company-label a{
     color: maroon;
     text-decoration: none;
@@ -253,6 +259,27 @@ body {
     background-position: top right;
     background-repeat: no-repeat;
     flex-grow: 2;
+}
+
+.leadership-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;    
+}
+
+.leadership-header{
+    text-align: center;
+    color: maroon;
+    line-height: 20px;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.leadership-text{
+    text-align: justify;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 /* Home Page Styles */
