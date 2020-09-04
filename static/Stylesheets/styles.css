@@ -164,7 +164,7 @@ body {
     height: fit-content;
 }
 
-.resume-heading{
+.about-heading{
     text-align: center;
     color: beige;
     line-height: 20px;
@@ -281,6 +281,55 @@ body {
     margin-left: 35px;
     margin-right: 35px;
 }
+
+
+.skills-content{
+    width: 500px;
+    list-style: none;
+    margin-left: 280px;
+}
+
+.bar{
+    display: block;
+    height: 30px;
+    width: 650px;
+    background-color: rgb(61, 61, 61);
+    border: 1px solid rgb(61, 61, 61);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(61, 61, 61);
+}
+
+.bar span{
+    height: 30px;
+    float: left;
+    text-align: right;
+    font-size: 14px;
+    color: beige;
+    background-color: maroon;
+    border-radius: 8px;
+}
+
+.skills-content li{
+    margin: 20px 0;
+}
+
+.skill-name{
+    color: beige;
+}
+
+.excel, .python {
+    width: 90%;
+}
+
+.stats, .java {
+    width: 80%;
+}
+
+.html, .cprogram {
+    width: 60%;
+}
+
 
 /* Home Page Styles */
 
