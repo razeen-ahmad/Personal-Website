@@ -169,7 +169,7 @@
                 </span>
             </li>
             <li>
-                <span class="skill-name">Statitical Analysis</span>
+                <span class="skill-name">Statistical Analysis</span>
                 <span class="bar">
                     <span class="skill stats">Intermediate/Advanced &nbsp;</span>
                 </span>
@@ -181,7 +181,7 @@
                 </span>
             </li>
             <li>
-                <span class="skill-name">HTML/CSS</span>
+                <span class="skill-name">HTML / CSS</span>
                 <span class="bar">
                     <span class="skill html">Intermediate &nbsp;</span>
                 </span>
@@ -200,8 +200,19 @@
             </li>
         </div>
     </div>
-    <div class="about-heading">
+    <div class="about-heading" style="margin-top: 100px;">
         <br><h1>Want to see more?</h1>
-        <hr>
+        <hr><br>
+        <div class="nav-buttons">
+            <div class="project-button">
+                <a href="{{ url_for('portfolio') }}">See My Projects →</a>
+            </div>
+            <div class="contact-button">
+                <a href="{{ url_for('contact') }}">Contact Me →</a>
+            </div>
+        </div>
     </div>
 {% endblock page_content %}
+
+{% block javascript_block %}
+{% endblock javascript_block %}
