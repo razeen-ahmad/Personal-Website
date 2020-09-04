@@ -6,6 +6,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Glegoo&display=swap" rel="stylesheet">  
         <link rel="stylesheet" type= "text/css" href= 
             "{{ url_for('static', filename = 'Stylesheets/styles.css') }}">
+        {% block head_section %}
+        {% endblock head_section %}
     </head>
     <body>
         <div class="container">
@@ -65,7 +67,7 @@
         <div class="footer">
             <span class="name-text">Razeen Ahmad</span>
             <br>
-            <a href="mailto:rahmad875@gmail.com">rahmad875@gmail.com</a>
+            <a href="mailto:razeen.ahmad@yahoo.com" target="_blank">razeen.ahmad@yahoo.com</a>
         </div>
     </body>
     {% block javascript_block %}

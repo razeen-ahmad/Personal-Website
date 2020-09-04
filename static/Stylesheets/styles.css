@@ -463,3 +463,64 @@ body {
     color: navy;
     border-color: navy;
 }
+
+
+/* Contact Page Styles */
+
+.contact-me-page{
+    margin-bottom: 127px;
+}
+
+.header{
+    line-height: 20px;
+    margin-top: 100px;
+}
+
+.header h1{
+    color: beige;
+    font-size: xxx-large;
+    margin-left: 10px;
+}
+
+.contact-text {
+    color: beige;
+    margin-top: 20px;
+    margin-left: 10px;
+    list-style: circle;
+}
+
+.contact-text li{
+    margin-left: 15px;
+}
+
+.linkedin-content, .email-content{
+    display: flex;
+}
+
+.linkedin-content span, .email-content span{
+    line-height: 50px;
+    margin-left: 10px;
+}
+
+.email-address a{
+    color: black;
+    text-decoration: none;
+}
+
+.linkedin-logo{
+    height: 48px;
+    width: 110px;
+    margin-left: 10px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.email-logo{
+    height: 48px;
+    width: 45px;
+    margin-left: 10px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
