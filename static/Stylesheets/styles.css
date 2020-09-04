@@ -14,6 +14,26 @@ body {
     margin-top: 62px;
 }
 
+.footer{
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+    color: gray;
+    height: 50px;
+    line-height: 22px;
+}
+
+.footer span{
+    margin-right: 10px;
+    float: right;
+    text-align: right;
+}
+
+.footer a{
+    float: right;
+    margin-right: 10px;
+    font-style: italic;
+    color: gray;
+}
 
 /* Navigation Bar Styles */
 .nav-bar{
@@ -34,7 +54,7 @@ body {
 
 .name a{
     text-decoration: none;
-    color: navy;
+    color:navy;
 }
 
 .right-side{
@@ -54,7 +74,7 @@ body {
 }
 
 .nav-link a {/*only grabbing link inside of nav-link classes */
-    color: rgb(216, 216, 216);
+    color: beige;
     text-decoration: none;
     transition: color 0.5s;
 }
@@ -147,18 +167,212 @@ body {
 .profile-image img{
     align-content: center;
     padding-top: 30px;
-    width: 100%;
+    width: 95%;
 }
 
 .profile-text{
     padding-top: 0px;
-    padding-left: 20px;
+    padding-left: 0px;
     padding-right: 10px;
 }
 
 .profile-text h1{
     color: navy;
 }
+
+.all-resume-content{
+    height: fit-content;
+}
+
+.about-heading{
+    text-align: center;
+    color: beige;
+    line-height: 20px;
+}
+
+.about-heading hr{
+    width: 50%;
+    color: beige;
+}
+
+.section-header{
+    color: navy; 
+    margin-top: 10px; 
+    margin-left: 5px;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.education-content{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: top center;
+}
+
+.education-awards{
+    margin-left: 10px; 
+    margin-top: 5px;
+}
+
+.umn-logo-image{
+    height: 200px;
+    width: 53%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-grow: 2;
+}
+
+.carlson-content{
+    text-align: left;
+    margin-left: 10px;
+}
+
+.company-label{
+    line-height: 5px;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+.experience-date{
+    float: right;
+    text-align: right;
+    margin-right: 30px;
+}
+
+.company-label a{
+    color: maroon;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.company-label a:hover{
+    color: navy;
+}
+
+.company-description{
+    display: flex;
+    flex-grow: 1;
+}
+
+.company-logo-image{
+    margin-top: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-grow: 1.5;
+}
+
+.company-description-text{
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
+    flex-grow: 2;
+}
+
+.leadership-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;    
+}
+
+.leadership-header{
+    text-align: center;
+    color: maroon;
+    line-height: 20px;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.leadership-text{
+    text-align: justify;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+
+.skills-content{
+    width: 500px;
+    list-style: none;
+    margin-left: 280px;
+}
+
+.bar{
+    display: block;
+    height: 30px;
+    width: 650px;
+    background-color: rgb(61, 61, 61);
+    border: 1px solid rgb(61, 61, 61);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(61, 61, 61);
+}
+
+.bar span{
+    height: 30px;
+    float: left;
+    text-align: right;
+    font-size: 14px;
+    color: beige;
+    background-color: maroon;
+    border-radius: 8px;
+}
+
+.skills-content li{
+    margin: 20px 0;
+}
+
+.skill-name{
+    color: beige;
+}
+
+.excel, .python {
+    width: 85%;
+}
+
+.stats, .java {
+    width: 73%;
+}
+
+.html, .cprogram {
+    width: 55%;
+}
+
+.nav-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+}
+
+.nav-buttons a{
+    text-decoration: none;
+    background-color: transparent;
+    font-size: x-large;
+    font-weight: 400;
+    color: beige;
+    border: 3px solid beige;
+    padding: 30px 50px;
+    transition-duration: 0.5s;
+}
+
+.nav-buttons a:hover{
+    color: navy;
+    border-color: navy;
+}
+
 
 /* Home Page Styles */
 
@@ -167,9 +381,9 @@ body {
 }
 
 .main-home-image {
-    height: 580px;
+    height: 600px;
     width: 100%;
-    filter: brightness(80%);
+    filter: brightness(75%);
     background-size: cover;
     background-position: center;
 }
@@ -182,4 +396,70 @@ body {
     font-size: xxx-large;
     font-weight: 800;
     line-height: 120px;
+}
+.greeting-text a{
+    font-size: x-large;
+    text-decoration: none;
+    padding: 30px 20px;
+    background-color: transparent;
+    border: 3px solid beige;
+    height: 25px;
+    width: 210px;
+    line-height: 20px;
+    color: beige;
+    letter-spacing: 5px;
+    position: absolute;
+    overflow: hidden;
+    display: inline-block;
+    top: 320px;
+    left: 5px;
+    transition-duration: 0.5s;
+}
+
+.greeting-text a:hover{
+    color: navy;
+    border-color: navy;
+}
+
+.project-section, .contact-section {
+    position: relative;    
+}
+
+.project-section-image, .contact-section-image {
+    height: 600px;
+    width: 100%;
+    filter: brightness(55%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-section-text, .contact-section-text {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    height: 100%;
+    text-align: left;
+    font-weight: 700;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: beige;
+    font-size: x-large;
+}
+
+.project-section-text a, .contact-section-text a{
+    color: beige;
+    text-decoration: none;
+    border: 3px solid beige;
+    letter-spacing: 5px;
+    transition-duration: 0.5s;
+    padding: 30px 20px;
+}
+
+.project-section-text a:hover, .contact-section-text a:hover{
+    color: navy;
+    border-color: navy;
 }
