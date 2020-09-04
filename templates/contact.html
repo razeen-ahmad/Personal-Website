@@ -1,20 +1,33 @@
 {% extends "template.html" %}
 
-{% block head_section %}
-<meta name="viewport" content="width=device-width, initial-scale=1">
-{% endblock head_section %}
-
 {% block page_content %}
     <div class="contact-me-page">
-        <h1>Contact Me </h1>
-        <hr style="width: 200px; color: beige; background: beige; height: 5px; margin: 40px auto;">
-
-        <form class="contact-form"  action="contact.html" method="POST">
-            <input type="text" class="contact-form-text" placeholder="Your Name.">
-            <input type="email" class="contact-form-text" placeholder="Your Email.">
-            <input type="subject" class="contact-form-text" placeholder="Subject of Your Message">
-            <textarea class="contact-form-text" placeholder="Your Message."></textarea>
-            <input type="submit" class="contact-form-btn" value = "Send">
-        </form>
+        <div class="header">
+            <h1>Contact Me </h1>
+            <hr style="width: 350px; color: beige; background: beige; height: 5px; float: left;">
+        </div>
+        <div class="contact-text">
+            <br>
+            If you have any questions, comments, or concerns about me, my projects, or my experience, please reach out!
+            <br>Even if it is just a quick hello, I'd love to connect!
+            <br><br>
+            <li>
+                <div class="linkedin-content">
+                    <span>Connect with me on LinkedIn →</span>
+                    <a href="https://www.linkedin.com/in/razeen-ahmad/" target="_blank">
+                        <div class="linkedin-logo" style="background-image: url(/static/Images/linkedinlogo.png);"></div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="email-content">
+                    <span>Email me → </span><a href="mailto:razeen.ahmad@yahoo.com" target="_blank">
+                        <div class="email-logo" style="background-image: url(/static/Images/emaillogo.png);"></div>
+                        </a>
+                        <span class="email-address"><a href="mailto:razeen.ahmad@yahoo.com" target="_blank">razeen.ahmad@yahoo.com</a></span>
+                    </div>
+                </div>
+            </li>
+        </div>
     </div>
 {% endblock page_content %}
