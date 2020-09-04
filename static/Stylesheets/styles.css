@@ -4,7 +4,7 @@ for page, use CTRL + SHIFT + R. This should take care of issue. */
 /* Master Styles */
 body {
     margin: 0px;
-    background-color:#5d5c61;
+    background-color:#7D7D7D;
     font-family: 'Glegoo', serif;
 }
 
@@ -16,8 +16,8 @@ body {
 
 .footer{
     width: 100%;
-    background-color: rgb(51, 51, 51);
-    color: gray;
+    background-color: #696969;
+    color: navy;
     height: 50px;
     line-height: 22px;
 }
@@ -32,7 +32,7 @@ body {
     float: right;
     margin-right: 10px;
     font-style: italic;
-    color: gray;
+    color: navy;
 }
 
 /* Navigation Bar Styles */
@@ -40,7 +40,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    background-color: rgb(153, 152, 152);
+    background-color: #696969;
     position: fixed;
     top: 0;
     width: 100%;
@@ -96,6 +96,60 @@ body {
 }
 
 /* Portfolio Page Styles */
+
+
+.portfolio-header{
+    position: relative;
+}
+
+.portfolio-header-image {
+    height: 450px;
+    width: 100%;
+    filter: brightness(50%);
+    filter: contrast(25%);
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio-header-greeting{
+    position: absolute;
+    text-align: center;
+    top: 30px;
+    width: 100%;
+    color: maroon;
+    font-size: xx-large;
+    font-weight: bolder;
+    line-height: 20px;
+}
+
+.portfolio-header-info{
+    position: relative;
+    top: -300px;
+    display: flex;
+    justify-content: space-between;
+    color: maroon;
+    font-weight: bold;
+    margin-top: 10px;
+    height: 250px;
+}
+
+.portfolio-description{
+    margin-left: 15px;
+    width: 50%;
+    border-style: double;
+    border-top: transparent;
+    border-left: transparent;
+    border-bottom: transparent;
+}
+
+.portfolio-status{
+    margin-right: 170px;
+}
+
+.portfolio-status li{
+    list-style: circle;
+    margin-left: 20px;
+}
 
 .all-portfolio-items {
     display: grid;
