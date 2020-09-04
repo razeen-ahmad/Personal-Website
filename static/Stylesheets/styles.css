@@ -463,3 +463,63 @@ body {
     color: navy;
     border-color: navy;
 }
+
+
+/* Contact Page Styles */
+
+.contact-me-page{
+    padding-block: 40px 0;
+}
+
+.contact-me-page h1{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 600;
+    color: beige;
+}
+
+.contact-form  {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background:rgb(51, 51, 51);
+    padding: 20px 40px;
+    outline: none;
+    color: beige;
+    transition: 0.5s;
+}
+
+.contact-form-text:focus{
+    box-shadow: 0 0 5px 2px beige;
+}
+
+textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+}
+
+.contact-form-btn{
+    float: right;
+    border: 0;
+    background: beige;
+    color: navy;
+    font-style: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 10px;
+}
+
+.contact-form-btn:hover{
+    background:#a8a886;
+}

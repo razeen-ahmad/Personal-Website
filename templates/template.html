@@ -6,6 +6,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Glegoo&display=swap" rel="stylesheet">  
         <link rel="stylesheet" type= "text/css" href= 
             "{{ url_for('static', filename = 'Stylesheets/styles.css') }}">
+        {% block head_section %}
+        {% endblock head_section %}
     </head>
     <body>
         <div class="container">
