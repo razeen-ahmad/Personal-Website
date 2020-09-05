@@ -1,8 +1,16 @@
 {% extends "mastertemplate.html" %}
 
 {% block page_content %}
-    <a href="url_for('portfolio')" style="margin-left: 10px;">← Back to portfolio</a>
-    <h1>Portofolio Item Content Here!!!</h1>
+    <a href="{{ url_for('portfolio') }}" class="quick-nav-link" style="margin-left: 10px;">← Back to portfolio</a>
+    <div class="post-title">
+        <h1>{% block post_title %}{% endblock post_title %}</h1>
+    </div>
+    <div class="post-info">
+            <img class="author-logo" src="../static/Images/authorlogo.png" style="width: 30px; height: 30px; margin-bottom: -9px;"> 
+            <a href="{{ url_for('contact') }}"> Razeen Ahmad </a> &nbsp;&nbsp;
+            <img class="calendar-logo" src="../static/Images/calendarlogo.png" style="width: 23px; height: 23px; margin-bottom: -3px;">
+            {% block post_date %}{% endblock post_date %}
+    </div>
     {%block portfolio_content %}
     {% endblock portfolio_content %}
 {% endblock page_content %}

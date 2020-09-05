@@ -258,6 +258,40 @@ body {
     font-weight: 900;
 }
 
+/* Portfolio post styles */
+
+.quick-nav-link{
+    display: inline-block;
+    color: maroon;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.post-title{
+    color: beige;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    font-style: bolder;
+}
+
+.post-info{
+    text-align: center;
+    margin-top: 20px;
+    color: maroon;
+    font-style: italic;
+}
+
+.post-info a{
+    color: maroon;
+    text-decoration: none;
+    margin-left: -4px;
+}
+
+.post-info a:hover{
+    color: navy;
+    transition: 0.5s;
+}
 
 /* About page styles */
 .profile-content{
