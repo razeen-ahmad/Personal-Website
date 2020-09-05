@@ -24,5 +24,9 @@ def portfolio():
 def contact():
     return render_template('contact.html', page_name = "Contact")
 
+@app.route("/lululemon-report")
+def lululemon():
+    return render_template('home.html', page_name = "Home")
+
 if(__name__)=='__main__':
     app.run(debug = True)

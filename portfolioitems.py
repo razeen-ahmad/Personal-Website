@@ -5,7 +5,8 @@ portfolioList = [
     {
         "Title": "Lululemon Report",
         "Subtitle" : "A deeper look at Lululemon Athletica, Inc. from a fundamental perspective.",
-        "BackgroundImage" : "YogaClass.jpg"
+        "BackgroundImage" : "YogaClass.jpg",
+        "Route" : "lululemon",
     },
 ]
 

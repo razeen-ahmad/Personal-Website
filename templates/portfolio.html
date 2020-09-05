@@ -36,7 +36,7 @@
                             style= "background-image:url('static/Images/{{ item.BackgroundImage }}')"></div>
                         <div class="item-text">
                             <div class="item-label">
-                                <h2>{{ item.Title }}</h2>
+                                <a href="{{ url_for(item.Route) }}"><h2>{{ item.Title }}</h2></a>
                             </div>
                             <div class="item-subtitle">
                                 {{ item.Subtitle}}
