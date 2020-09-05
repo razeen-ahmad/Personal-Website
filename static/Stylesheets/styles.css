@@ -203,6 +203,16 @@ body {
     color: beige;
 }
 
+.item-label a{
+    color: beige;
+    text-decoration: none;
+}
+
+.item-label a:hover{
+    color: maroon;
+    transition: 0.5s;
+}
+
 /* making subtitle text initially invisible */
 .item-text .item-subtitle{
     transition: 1s;
