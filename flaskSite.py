@@ -1,20 +1,10 @@
 from flask import Flask, render_template, url_for
+from portfolioitems import *
 
 app = Flask(__name__)
 app.static_folder = 'static'
 
-portfolioItemList = [
-    {
-        "Title": "Lululemon Report",
-        "Subtitle" : "A deeper look at Lululemon Athletica, Inc. from a fundamental perspective.",
-        "BackgroundImage" : "/static/Images/YogaClass.jpg"
-    },
-    {
-        "Title": "Lululemon Report",
-        "Subtitle" : "A deeper look at Lululemon Athletica, Inc. from a fundamental perspective.",
-        "BackgroundImage" : "/static/Images/YogaClass.jpg"
-    }
-]
+portfolioItemList = getPortfolio()
 
 
 @app.route("/home")

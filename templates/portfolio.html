@@ -33,8 +33,7 @@
                 {% for item in portfolio_items %}
                     <div class="portfolio-item">
                         <div class="item-img-background"
-                            style= "background-image:url(/static/Images/YogaClass.jpg)"></div>
-        
+                            style= "background-image:url('static/Images/{{ item.BackgroundImage }}')"></div>
                         <div class="item-text">
                             <div class="item-label">
                                 <h2>{{ item.Title }}</h2>
