@@ -116,39 +116,43 @@ body {
     text-align: center;
     top: 30px;
     width: 100%;
-    color: maroon;
+    color: beige;
     font-size: xx-large;
     font-weight: bolder;
     line-height: 20px;
 }
 
 .portfolio-header-info{
-    position: relative;
-    top: -300px;
+    position: absolute;
+    top: 150px;
     display: flex;
     justify-content: space-between;
-    color: maroon;
+    color: beige;
     font-weight: bold;
     margin-top: 10px;
-    height: 250px;
 }
 
 .portfolio-description{
-    margin-left: 15px;
+    margin-left: 40px;
     width: 50%;
-    border-style: double;
-    border-top: transparent;
-    border-left: transparent;
-    border-bottom: transparent;
 }
 
 .portfolio-status{
-    margin-right: 170px;
+    text-align: center;
+    width: 23%;
+    border-style: solid;
+    border-right: transparent;
+    padding-left: 15px;
+    height: 160px;
+    background-color: #696969;
+    color: beige;
 }
 
 .portfolio-status li{
     list-style: circle;
-    margin-left: 20px;
+    text-align: left;
+    list-style-position: inside;
+    margin-right: 10px;
 }
 
 .all-portfolio-items {
@@ -163,7 +167,7 @@ body {
 .item-img-background {
     height: 350px;
     width: 100%;
-    filter: brightness(75%);
+    filter: brightness(90%) contrast(70%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -183,9 +187,9 @@ body {
 }
 
 .item-label{
-    width: 50%;
+    width: 100%;
     margin-bottom: 20px;
-    color:whitesmoke;
+    color: beige;
 }
 
 .item-text .item-subtitle{
@@ -203,12 +207,22 @@ body {
 /* To darken portfolio images when hovered over */
 .item-img-darken{
     transition: 1s;
-    filter: brightness(25%);
+    filter: brightness(30%) contrast(40%);
 }
 
 .item-img-brighten{
     transition: 1s;
-    filter: brightness(75%);   
+    filter: brightness(90%) contrast(70%);  
+}
+
+.ending-message{
+    width: 100%;
+    text-align: left;
+    margin-top: 250px;
+    margin-left: 10px;
+    color: beige;
+    letter-spacing: 2px;
+    font-weight: 900;
 }
 
 
