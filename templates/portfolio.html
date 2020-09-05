@@ -30,24 +30,32 @@
         </div>
         <div class="portfolio-content">
             <div class="all-portfolio-items">
-                <div class="portfolio-item">
-                    <div class="item-img-background"
-                        style= "background-image:url(/static/Images/YogaClass.jpg)"></div>
-    
-                    <div class="item-text">
-                        <div class="item-label">
-                            <h2>Lululemon Report</h2>
-                        </div>
-                        <div class="item-subtitle">
-                            A deeper look at Lululemon Athletica, Inc. from 
-                            a fundamental perspective.
+                {% for item in portfolio_items %}
+                    <div class="portfolio-item">
+                        <div class="item-img-background"
+                            style= "background-image:url(/static/Images/YogaClass.jpg)"></div>
+        
+                        <div class="item-text">
+                            <div class="item-label">
+                                <h2>{{ item.Title }}</h2>
+                            </div>
+                            <div class="item-subtitle">
+                                {{ item.Subtitle}}
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="ending-message">
-                    <h1>More Coming Soon . . .</h1>
-                </div>
-            </div>
+                {% endfor %}
+                {% if (portfolio_items.__len__() // 3) == 0 %}
+                        <div class="ending-message-inline">
+                            <h1>More Coming Soon . . .</h1>
+                        </div>
+                    </div>
+                {% else %}
+                    </div>
+                    <div class="ending-message-newline">
+                        <h1>More Coming Soon . . .</h1>
+                    </div>
+                {% endif %}
         </div>
     </div>
 {% endblock page_content %}

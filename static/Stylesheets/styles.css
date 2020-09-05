@@ -47,6 +47,7 @@ body {
     z-index: 500;
 }
 
+/* my name on left side of navigation bar */
 .name{
     font-size: 18px;
     color: navy;
@@ -57,6 +58,7 @@ body {
     color:navy;
 }
 
+/*navigation bar links */
 .right-side{
     display: flex;
 }
@@ -67,13 +69,14 @@ body {
     text-transform: uppercase;
 }
 
+/* adding transitions/animations to the links */
 .nav-link {
     height: 30px;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
 }
 
-.nav-link a {/*only grabbing link inside of nav-link classes */
+.nav-link a {
     color: beige;
     text-decoration: none;
     transition: color 0.5s;
@@ -87,6 +90,7 @@ body {
     color: navy;
 }
 
+/* Current page maintains navy underline in navigation bar */
 .active-nav-link {
     border-bottom: 1px solid navy;
 }
@@ -111,6 +115,7 @@ body {
     background-position: center;
 }
 
+/* the "My Portfolio" at the top of the page */
 .portfolio-header-greeting{
     position: absolute;
     text-align: center;
@@ -122,6 +127,7 @@ body {
     line-height: 20px;
 }
 
+/*all text in portfolio header */
 .portfolio-header-info{
     position: absolute;
     top: 150px;
@@ -137,6 +143,7 @@ body {
     width: 50%;
 }
 
+/* status is card in right side showing what I am currently working on */
 .portfolio-status{
     text-align: center;
     width: 23%;
@@ -155,6 +162,7 @@ body {
     margin-right: 10px;
 }
 
+/* All portfolio items grid under header */
 .all-portfolio-items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;/*creates grid layout with 3cols per row*/
@@ -164,6 +172,7 @@ body {
     position: relative;
 }
 
+/* each project's card image */
 .item-img-background {
     height: 350px;
     width: 100%;
@@ -173,6 +182,7 @@ body {
     background-repeat: no-repeat;
 }
 
+/* all text within each card */
 .item-text{
     position: absolute;
     top: 0;
@@ -186,25 +196,27 @@ body {
     padding-right: 100px;
 }
 
+/* project title */
 .item-label{
     width: 100%;
     margin-bottom: 20px;
     color: beige;
 }
 
+/* making subtitle text initially invisible */
 .item-text .item-subtitle{
     transition: 1s;
     font-weight: 525;
     color: transparent;
 }
 
-/* only apply styles to item-subtitle class when hovered over */
+/* only apply styles to subtitle text when hovered over */
 .item-text:hover .item-subtitle{
     font-weight: 525;
     color: lightgrey;
 }
 
-/* To darken portfolio images when hovered over */
+/* To darken/brighten portfolio images when hovered over */
 .item-img-darken{
     transition: 1s;
     filter: brightness(30%) contrast(40%);
@@ -215,10 +227,21 @@ body {
     filter: brightness(90%) contrast(70%);  
 }
 
-.ending-message{
+/* conditional formatting based on how many portfolio items are added-- where to place ending message */
+.ending-message-inline{
     width: 100%;
     text-align: left;
     margin-top: 250px;
+    margin-left: 10px;
+    color: beige;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+.ending-message-newline{
+    width: 99%;
+    text-align: center;
+    margin-top: 25px;
     margin-left: 10px;
     color: beige;
     letter-spacing: 2px;
@@ -232,22 +255,26 @@ body {
     justify-content: space-between;
 }
 
+/* main about page picture of myself*/
 .profile-image img{
     align-content: center;
     padding-top: 30px;
     width: 95%;
 }
 
+/* description next to main picture */
 .profile-text{
     padding-top: 0px;
     padding-left: 0px;
     padding-right: 10px;
 }
 
+/* "A little about me" header */
 .profile-text h1{
     color: navy;
 }
 
+/* resume section of page */
 .all-resume-content{
     height: fit-content;
 }
@@ -377,6 +404,7 @@ body {
     margin-left: 280px;
 }
 
+/*skill bars*/
 .bar{
     display: block;
     height: 30px;
@@ -406,6 +434,7 @@ body {
     color: beige;
 }
 
+/* setting length of each skill bar */
 .excel, .python {
     width: 85%;
 }
@@ -418,6 +447,8 @@ body {
     width: 55%;
 }
 
+
+/*buttons at the end of the page */
 .nav-buttons{
     display: flex;
     justify-content: space-evenly;
