@@ -206,11 +206,11 @@ body {
 .item-label a{
     color: beige;
     text-decoration: none;
+    transition-duration: 0.5s;
 }
 
 .item-label a:hover{
     color: maroon;
-    transition: 0.5s;
 }
 
 /* making subtitle text initially invisible */
@@ -286,11 +286,11 @@ body {
     color: maroon;
     text-decoration: none;
     margin-left: -4px;
+    transition-duration: 0.5s;
 }
 
 .post-info a:hover{
     color: navy;
-    transition: 0.5s;
 }
 
 /* About page styles */
