@@ -678,6 +678,74 @@ body {
     border-color: navy;
 }
 
+@media only screen and (max-width: 600px){
+
+    .main-home-image {
+        height: 37.5em;
+        width: 100%;
+        filter: brightness(75%);
+        background-size: cover;
+        background-position: 70% 50%;
+    }    
+
+    .greeting-text{
+        position: absolute;
+        top: 7.5em;
+        left: 2em;
+        color: rgb(238, 238, 198);
+        font-size: x-large;
+        font-weight: 800;
+        line-height: 2.4em;
+    }
+    .greeting-text a{
+        font-size: large;
+        text-decoration: none;
+        padding: 1.4em 1.25em;
+        background-color: transparent;
+        border: 0.1875em solid beige;
+        height: 1.2em;
+        width: 100%;
+        line-height: 1.25em;
+        color: beige;
+        letter-spacing: 0.3125em;
+        position: absolute;
+        overflow: hidden;
+        display: inline-block;
+        top: 11.5em;
+        transition-duration: 0.5s;
+    }
+
+
+    .project-section-text, .contact-section-text {
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        height: 100%;
+        width: 100%;
+        text-align: left;
+        font-weight: 700;
+        padding-left: 0.7em;
+        padding-right: 0em;
+        color: beige;
+        font-size: large;
+    }
+
+    .project-section-text a, .contact-section-text a{
+        color: beige;
+        text-decoration: none;
+        border: 0.1875em solid beige;
+        letter-spacing: 0.3125em;
+        transition-duration: 0.5s;
+        padding: 1.5em 0em;
+        padding-left: 0.6em;
+        padding-right: -7em;
+    }
+
+}
+
 
 /* Contact Page Styles */
 
