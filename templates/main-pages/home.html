@@ -1,7 +1,7 @@
 {% extends "mastertemplate.html" %}
 
 {% block page_content %}
-    <div class="all-home-items">
+    <div class="all-home-items" style="width: 100%;">
         <div class="greeting-image">
             <div class="main-home-image"
                 style= "background-image:url(/static/Images/HomePage.jpg);" ></div>
@@ -14,14 +14,14 @@
             <div class="project-section-image" style="background-image: url(/static/Images/working.jpg);"></div>
             <div class="project-section-text">
                 <h1>Check Out What I've Been Working On!</h1><br>
-                <a href="{{ url_for('portfolio') }}" style="width: 250px;">My Projects →</a>
+                <a href="{{ url_for('portfolio') }}" style="width: 15.625em;">My Projects →</a>
             </div>
         </div>
         <div class="contact-section">
             <div class="contact-section-image" style="background-image: url(/static/Images/talking.jpg);"></div>
             <div class="contact-section-text">
                 <h1>Have Any Questions?</h1><br>
-                <a href="{{ url_for('contact') }}" style="width: 275px;">Let's Connect →</a>
+                <a href="{{ url_for('contact') }}" style="width: 17.1875em;">Let's Connect →</a>
             </div>
         </div>
     </div>
