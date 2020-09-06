@@ -12,6 +12,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 3.875em;
+    width: 100%;
 }
 
 .footer{
@@ -103,7 +104,8 @@ body {
 
 @media only screen and (max-width: 600px){
     .nav-bar > .right-side {
-        margin-left: 1.5em;
+        margin-left: 0.2em;
+        width: 100%;
     }
     .nav-bar > .right-side > div {
         margin-left: 1em;
@@ -116,6 +118,7 @@ body {
 
 .portfolio-header{
     position: relative;
+    width: 100%;
 }
 
 .portfolio-header-image {
@@ -144,7 +147,6 @@ body {
     position: absolute;
     top: 9.375em;
     display: flex;
-    flex-flow: wrap;
     justify-content: space-between;
     color: beige;
     font-weight: bold;
@@ -152,32 +154,34 @@ body {
 }
 
 .portfolio-description{
-    margin-left: 2.5em;
+    padding-left: 2.5em;
     width: 50%;
 }
 
 /* status is card in right side showing what I am currently working on */
 .portfolio-status{
     text-align: center;
-    width: 23%;
+    width: 25%;
     border-style: solid;
     border-right: transparent;
     padding: 0.5em 0.5em;
-    padding-left: 0.9375em;
+    padding-right: 4%;
     background-color: #696969;
     color: beige;
 }
 
-.portfolio-status li{
+.portfolio-status ul{
     list-style: circle;
     text-align: left;
     list-style-position: inside;
-    margin-right: 0.625em;
+    padding-right: 0.625em;
+    width: 100%;
 }
 
 /* All portfolio items grid under header */
 .all-portfolio-items {
     display: grid;
+    width: 100%;
     grid-template-columns: 1fr 1fr 1fr;/*creates grid layout with 3cols per row*/
 }
 
@@ -205,8 +209,8 @@ body {
     align-items: center;
     height: 100%;
     text-align: center;
-    padding-left: 6.25em;
-    padding-right: 6.25em;
+    padding-left: auto;
+    padding-right: auto;
 }
 
 /* project title */
@@ -214,6 +218,11 @@ body {
     width: 100%;
     margin-bottom: 1.25em;
     color: beige;
+}
+
+.item-subtitle{
+    text-align: center;
+    padding-left: 0.625em;
 }
 
 .item-label a{
@@ -254,7 +263,7 @@ body {
 .ending-message-inline{
     width: 100%;
     text-align: left;
-    margin-top: 15.625em;
+    margin-top: 1.5625em;
     margin-left: 0.625em;
     color: beige;
     letter-spacing: 0.125em;
@@ -262,7 +271,7 @@ body {
 }
 
 .ending-message-newline{
-    width: 99%;
+    width: 100%;
     text-align: center;
     margin-top: 1.5625em;
     margin-left: 0.625em;
@@ -270,6 +279,57 @@ body {
     letter-spacing: 0.125em;
     font-weight: 900;
 }
+
+
+@media only screen and (max-width: 600px){
+    .all-portfolio-content{
+        width: 100%;
+        height: 100%
+    }
+
+    .portfolio-header{
+        width: 100%;
+        height: 100%;
+    }
+
+    .all-portfolio-items{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) );
+    }
+
+
+    .portfolio-header-info{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .portfolio-description{
+        margin-right: 1em;
+        padding-left: 0.625em;
+        text-align: left;
+        width: 95%;
+    }
+
+    .portfolio-status{
+        width: 92%;
+        border-right: solid beige;
+        border-left: transparent;
+    }
+
+    .portfolio-status ul{
+        width: 90%;
+        text-align: left;
+        padding-right: 0.3em;
+    }
+
+    /* MAY NEED TO ADJUST HERE */
+    .portfolio-content{
+        width: 95%;
+        margin-top: 12.2em;/* MAY NEED TO EDIT THIS WHEN CHANGING STATUS CARD */
+    }
+    
+}
+
 
 /* Portfolio post styles */
 

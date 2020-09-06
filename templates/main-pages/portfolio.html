@@ -1,7 +1,7 @@
 {% extends "mastertemplate.html" %}
 
 {% block page_content %}
-    <div class="all-portfolio-content" style="width: 100%; height: 100%; margin: 0px; padding: 0px; overflow:hidden">
+    <div class="all-portfolio-content">
         <div class="portfolio-header">
             <div class="portfolio-header-image" style="background-image: url(/static/Images/portfolioheader.jpg);"></div>
             <div class="portfolio-header-text">
@@ -17,13 +17,15 @@
                         greatly appreciated.
                     </div>
                     <div class="portfolio-status">
-                        <b><u>What I am currently working on:</u></b>
-                        <li>
-                            Hosting this website on a live webserver.
-                        </li>
-                        <li>
-                            Adding a few simple animations to this website.
-                        </li>
+                        <ul>
+                            <b><u>What I am currently working on:</u></b>
+                            <li>
+                                Hosting this website on a live webserver.
+                            </li>
+                            <li>
+                                Adding a few simple animations to this website.
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -52,7 +54,7 @@
                 {% else %}
                     </div>
                     <div class="ending-message-newline">
-                        <h1>More Coming Soon . . .</h1>
+                        <h1>More Coming Soon ...</h1>
                     </div>
                 {% endif %}
         </div>
