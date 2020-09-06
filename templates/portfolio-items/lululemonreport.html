@@ -5,21 +5,19 @@
 
 {% block portfolio_content %}
     <div class="pdf-viewer">
+        <span class="page-info">
+            Page <span id="page-num" style="font-weight: bold;"></span> of 
+            <span id="page-count" style="font-weight: bold;"></span>
+        </span>
         <div class="pdf-navigation">
-            <button class="btn" id="prev-page">
+            <button class="btn" id="prev-page" style="margin-left: 5%;">
                 ← Prev. Page
             </button>
-            <button class="btn" id="next-page" sty>
+            <canvas id="pdf-render"></canvas>
+            <button class="btn" id="next-page" style="margin-right: 5%;">
                 Next Page →
             </button>
-            <br>
-            <span class="page-info">
-                Page <span id="page-num" style="font-weight: bold;"></span> of 
-                <span id="page-count" style="font-weight: bold;"></span>
-            </span>
         </div>
-
-        <canvas id="pdf-render"></canvas>
 
         <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
         <script>

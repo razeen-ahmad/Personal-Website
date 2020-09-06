@@ -669,22 +669,32 @@ body {
 }
 
 /* pdf post styles */
-.pdf-navigation{
+
+.pdf-viewer span.page-info{
+    display: inline-block;
     width: 100%;
     text-align: center;
+    margin-top: 30px;
+}
+
+.pdf-navigation{
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 #prev-page, #next-page{
+    display: inline-block;
+    height: 35px;
     font-family: 'Glegoo', serif;
     color: bisque !important;
     text-transform: uppercase;
     text-decoration: none;
     background: maroon;
-    margin-top: 25px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     border: none;
     transition: all 0.4s ease 0s;
 }
@@ -698,14 +708,11 @@ body {
     transition: all 0.4s ease 0s;
 }
 
-.pdf-navigation span.page-info {
-    display: inline-block;
-    margin-top: 30px;
-}
 
 canvas {
     display: block;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid beige;
+    margin-bottom: 10px;
 }
