@@ -38,7 +38,6 @@ body {
 /* Navigation Bar Styles */
 .nav-bar{
     display: flex;
-    flex-flow: wrap;
     justify-content: space-between;
     padding: 0.9375em;
     background-color: #696969;
@@ -100,6 +99,17 @@ body {
 .active-nav-link a{
     color: navy !important;
 }
+
+
+@media only screen and (max-width: 600px){
+    .nav-bar > .right-side {
+        margin-left: 1.5em;
+    }
+    .nav-bar > .right-side > div {
+        margin-left: 1em;
+    }
+}
+
 
 /* Portfolio Page Styles */
 
@@ -356,7 +366,6 @@ body {
 }
 
 .umn-logo-image{
-    /*12.5em */
     width: 53%;
     background-size: contain;
     background-position: center;
@@ -375,6 +384,7 @@ body {
     margin-left: 0.625em;
     margin-top: 2.5em;
     display: inline-block;
+    width: 100%;
 }
 
 .company-label a{
@@ -680,6 +690,7 @@ body {
 
 @media only screen and (max-width: 600px){
 
+
     .main-home-image {
         height: 37.5em;
         width: 100%;
@@ -724,7 +735,7 @@ body {
         justify-content: center;
         align-items: left;
         height: 100%;
-        width: 100%;
+        width: 12.5em;
         text-align: left;
         font-weight: 700;
         padding-left: 0.7em;
