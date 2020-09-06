@@ -1,0 +1,78 @@
+{% extends "mastertemplate.html" %}
+
+{% block page_content %}
+    <div class="all-portfolio-content">
+        <div class="portfolio-header">
+            <div class="portfolio-header-image" style="background-image: url(/static/Images/portfolioheader.jpg);"></div>
+            <div class="portfolio-header-text">
+                <div class="portfolio-header-greeting">
+                    My Portfolio
+                    <hr style="color: beige; background: beige; height: 2px; width: 75%;">
+                </div>
+                <div class="portfolio-header-info">
+                    <div class="portfolio-description">
+                        Welcome to my portfolio page. Here, you will find a number of different projects / posts that I have worked
+                        on in my free time. My goal with these projects is to build on my finance and computer science skills
+                        while integrating my other interests / passions. Take a look and let me know what you think! All feedback is
+                        greatly appreciated.
+                    </div>
+                    <div class="portfolio-status">
+                        <b><u>What I am currently working on:</u></b>
+                        <li>
+                            Hosting this website on a live webserver.
+                        </li>
+                        <li>
+                            Adding a few simple animations to this website.
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-content">
+            <div class="all-portfolio-items">
+                {% for item in portfolio_items %}
+                    <div class="portfolio-item">
+                        <div class="item-img-background"
+                            style= "background-image:url('static/Images/{{ item.BackgroundImage }}')"></div>
+                        <div class="item-text">
+                            <div class="item-label">
+                                <a href="{{ url_for(item.Route) }}"><h2>{{ item.Title }}</h2></a>
+                            </div>
+                            <div class="item-subtitle">
+                                {{ item.Subtitle}}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                {% if (portfolio_items.__len__() // 3) == 0 %}
+                        <div class="ending-message-inline">
+                            <h1>More Coming Soon . . .</h1>
+                        </div>
+                    </div>
+                {% else %}
+                    </div>
+                    <div class="ending-message-newline">
+                        <h1>More Coming Soon . . .</h1>
+                    </div>
+                {% endif %}
+        </div>
+    </div>
+{% endblock page_content %}
+
+{%block javascript_block %}
+    <script>
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        portfolioItems.forEach(item => {/* adds image darken when mouse over specific portfolio item */
+            item.addEventListener('mouseover', () => {
+                item.childNodes[1].classList.add('item-img-darken');
+                item.childNodes[1].classList.remove('item-img-brighten');
+            })
+
+            item.addEventListener('mouseout', () => {
+                item.childNodes[1].classList.add('item-img-brighten');
+                item.childNodes[1].classList.remove('item-img-darken');
+            })
+        })
+    </script>
+{% endblock javascript_block %}

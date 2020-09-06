@@ -4,7 +4,7 @@ for page, use CTRL + SHIFT + R. This should take care of issue. */
 /* Master Styles */
 body {
     margin: 0px;
-    background-color:#5d5c61;
+    background-color:#7D7D7D;
     font-family: 'Glegoo', serif;
 }
 
@@ -16,8 +16,8 @@ body {
 
 .footer{
     width: 100%;
-    background-color: rgb(51, 51, 51);
-    color: gray;
+    background-color: #696969;
+    color: navy;
     height: 50px;
     line-height: 22px;
 }
@@ -32,7 +32,7 @@ body {
     float: right;
     margin-right: 10px;
     font-style: italic;
-    color: gray;
+    color: navy;
 }
 
 /* Navigation Bar Styles */
@@ -40,13 +40,14 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    background-color: rgb(153, 152, 152);
+    background-color: #696969;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 500;
 }
 
+/* my name on left side of navigation bar */
 .name{
     font-size: 18px;
     color: navy;
@@ -57,6 +58,7 @@ body {
     color:navy;
 }
 
+/*navigation bar links */
 .right-side{
     display: flex;
 }
@@ -67,13 +69,14 @@ body {
     text-transform: uppercase;
 }
 
+/* adding transitions/animations to the links */
 .nav-link {
     height: 30px;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
 }
 
-.nav-link a {/*only grabbing link inside of nav-link classes */
+.nav-link a {
     color: beige;
     text-decoration: none;
     transition: color 0.5s;
@@ -87,6 +90,7 @@ body {
     color: navy;
 }
 
+/* Current page maintains navy underline in navigation bar */
 .active-nav-link {
     border-bottom: 1px solid navy;
 }
@@ -97,6 +101,68 @@ body {
 
 /* Portfolio Page Styles */
 
+
+.portfolio-header{
+    position: relative;
+}
+
+.portfolio-header-image {
+    height: 450px;
+    width: 100%;
+    filter: brightness(50%);
+    filter: contrast(25%);
+    background-size: cover;
+    background-position: center;
+}
+
+/* the "My Portfolio" at the top of the page */
+.portfolio-header-greeting{
+    position: absolute;
+    text-align: center;
+    top: 30px;
+    width: 100%;
+    color: beige;
+    font-size: xx-large;
+    font-weight: bolder;
+    line-height: 20px;
+}
+
+/*all text in portfolio header */
+.portfolio-header-info{
+    position: absolute;
+    top: 150px;
+    display: flex;
+    justify-content: space-between;
+    color: beige;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.portfolio-description{
+    margin-left: 40px;
+    width: 50%;
+}
+
+/* status is card in right side showing what I am currently working on */
+.portfolio-status{
+    text-align: center;
+    width: 23%;
+    border-style: solid;
+    border-right: transparent;
+    padding-left: 15px;
+    height: 160px;
+    background-color: #696969;
+    color: beige;
+}
+
+.portfolio-status li{
+    list-style: circle;
+    text-align: left;
+    list-style-position: inside;
+    margin-right: 10px;
+}
+
+/* All portfolio items grid under header */
 .all-portfolio-items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;/*creates grid layout with 3cols per row*/
@@ -106,15 +172,17 @@ body {
     position: relative;
 }
 
+/* each project's card image */
 .item-img-background {
     height: 350px;
     width: 100%;
-    filter: brightness(75%);
+    filter: brightness(90%) contrast(70%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+/* all text within each card */
 .item-text{
     position: absolute;
     top: 0;
@@ -128,35 +196,102 @@ body {
     padding-right: 100px;
 }
 
+/* project title */
 .item-label{
-    width: 50%;
+    width: 100%;
     margin-bottom: 20px;
-    color:whitesmoke;
+    color: beige;
 }
 
+.item-label a{
+    color: beige;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.item-label a:hover{
+    color: maroon;
+}
+
+/* making subtitle text initially invisible */
 .item-text .item-subtitle{
     transition: 1s;
     font-weight: 525;
     color: transparent;
 }
 
-/* only apply styles to item-subtitle class when hovered over */
+/* only apply styles to subtitle text when hovered over */
 .item-text:hover .item-subtitle{
     font-weight: 525;
     color: lightgrey;
 }
 
-/* To darken portfolio images when hovered over */
+/* To darken/brighten portfolio images when hovered over */
 .item-img-darken{
     transition: 1s;
-    filter: brightness(25%);
+    filter: brightness(30%) contrast(40%);
 }
 
 .item-img-brighten{
     transition: 1s;
-    filter: brightness(75%);   
+    filter: brightness(90%) contrast(70%);  
 }
 
+/* conditional formatting based on how many portfolio items are added-- where to place ending message */
+.ending-message-inline{
+    width: 100%;
+    text-align: left;
+    margin-top: 250px;
+    margin-left: 10px;
+    color: beige;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+.ending-message-newline{
+    width: 99%;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 10px;
+    color: beige;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+/* Portfolio post styles */
+
+.quick-nav-link{
+    display: inline-block;
+    color: maroon;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.post-title{
+    color: beige;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    font-style: bolder;
+}
+
+.post-info{
+    text-align: center;
+    margin-top: 20px;
+    color: maroon;
+    font-style: italic;
+}
+
+.post-info a{
+    color: maroon;
+    text-decoration: none;
+    margin-left: -4px;
+    transition-duration: 0.5s;
+}
+
+.post-info a:hover{
+    color: navy;
+}
 
 /* About page styles */
 .profile-content{
@@ -164,22 +299,26 @@ body {
     justify-content: space-between;
 }
 
+/* main about page picture of myself*/
 .profile-image img{
     align-content: center;
     padding-top: 30px;
     width: 95%;
 }
 
+/* description next to main picture */
 .profile-text{
     padding-top: 0px;
     padding-left: 0px;
     padding-right: 10px;
 }
 
+/* "A little about me" header */
 .profile-text h1{
     color: navy;
 }
 
+/* resume section of page */
 .all-resume-content{
     height: fit-content;
 }
@@ -309,6 +448,7 @@ body {
     margin-left: 280px;
 }
 
+/*skill bars*/
 .bar{
     display: block;
     height: 30px;
@@ -338,6 +478,7 @@ body {
     color: beige;
 }
 
+/* setting length of each skill bar */
 .excel, .python {
     width: 85%;
 }
@@ -350,6 +491,8 @@ body {
     width: 55%;
 }
 
+
+/*buttons at the end of the page */
 .nav-buttons{
     display: flex;
     justify-content: space-evenly;
@@ -523,4 +666,53 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+/* pdf post styles */
+
+.pdf-viewer span.page-info{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pdf-navigation{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#prev-page, #next-page{
+    display: inline-block;
+    height: 35px;
+    font-family: 'Glegoo', serif;
+    color: bisque !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: maroon;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    transition: all 0.4s ease 0s;
+}
+
+#prev-page:hover, #next-page:hover{
+    background: rgb(54, 54, 54);
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}
+
+
+canvas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid beige;
+    margin-bottom: 10px;
 }
