@@ -5,6 +5,103 @@
 
 {% block portfolio_content %}
     <div class="pdf-viewer">
-        
+        <div class="pdf-navigation">
+            <button class="btn" id="prev-page">
+                ← Prev. Page
+            </button>
+            <button class="btn" id="next-page" sty>
+                Next Page →
+            </button>
+            <br>
+            <span class="page-info">
+                Page <span id="page-num" style="font-weight: bold;"></span> of 
+                <span id="page-count" style="font-weight: bold;"></span>
+            </span>
+        </div>
+
+        <canvas id="pdf-render"></canvas>
+
+        <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+        <script>
+            const url = 'static/PDFfiles/Lululemon Case Study- Razeen Ahmad.pdf';
+
+            let pdfDoc = null,
+                pageNum = 1,
+                pageIsRendering = false
+                pageNumIsPending = null;
+            
+            //Get pdf file into canvas
+            const scale = 1.3,
+                canvas = document.querySelector('#pdf-render'),
+                ctx = canvas.getContext('2d');
+            
+            //Render the page
+            const renderPage = num => {
+                pageIsRendering = true;
+
+                //get page
+                pdfDoc.getPage(num).then(page => {
+                    //Set scale for document
+                    const viewport = page.getViewport({ scale });
+                    canvas.height = viewport.height;
+                    canvas.width = viewport.width;
+
+                    const renderCtx = {
+                        canvasContext: ctx,
+                        viewport
+                    }
+                    page.render(renderCtx).promise.then(() => {
+                        pageIsRendering = false;
+
+                        if(pageNumIsPending !== null) {
+                            renderPage(pageNumIsPending);
+                            pageNumIsPending = null;
+                        }
+                    });
+
+                    //Output current page
+                    document.querySelector('#page-num').textContent = num;
+                });
+            };
+
+            //Check for pages rendering
+            const queueRenderPage = num => {
+                if(pageIsRendering) {
+                    pageNumIsPending = num;
+                }
+                else {
+                    renderPage(num);
+                } 
+            }
+
+            //Show previous page
+            const showPrevPage = () => {
+                if(pageNum <= 1){
+                    return;
+                }
+                pageNum--;
+                queueRenderPage(pageNum);
+            }
+
+            //Show next page
+            const showNextPage = () => {
+                if(pageNum >= pdfDoc.numPages){
+                    return;
+                }
+                pageNum++;
+                queueRenderPage(pageNum);
+            }
+
+            //Get document 
+            pdfjsLib.getDocument(url).promise.then(pdfDoc_ =>{
+                pdfDoc = pdfDoc_;
+                document.querySelector('#page-count').textContent = pdfDoc.numPages;
+                renderPage(pageNum)
+            });
+            //Button functionality
+            document.querySelector('#prev-page').addEventListener('click', showPrevPage);
+            document.querySelector('#next-page').addEventListener('click', showNextPage);
+
+        </script>
     </div>
 {% endblock portfolio_content %}

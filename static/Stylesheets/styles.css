@@ -667,3 +667,45 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/* pdf post styles */
+.pdf-navigation{
+    width: 100%;
+    text-align: center;
+}
+
+#prev-page, #next-page{
+    font-family: 'Glegoo', serif;
+    color: bisque !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: maroon;
+    margin-top: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    transition: all 0.4s ease 0s;
+}
+
+#prev-page:hover, #next-page:hover{
+    background: rgb(54, 54, 54);
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+}
+
+.pdf-navigation span.page-info {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+canvas {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid beige;
+}
