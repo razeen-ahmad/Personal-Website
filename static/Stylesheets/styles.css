@@ -611,7 +611,7 @@ body {
 /* Contact Page Styles */
 
 .contact-me-page{
-    margin-bottom: 127px;
+    margin-bottom: 78px;
 }
 
 .header{
@@ -636,11 +636,11 @@ body {
     margin-left: 15px;
 }
 
-.linkedin-content, .email-content{
+.linkedin-content, .email-content, .github-content{
     display: flex;
 }
 
-.linkedin-content span, .email-content span{
+.linkedin-content span, .email-content span, .github-content span{
     line-height: 50px;
     margin-left: 10px;
 }
@@ -662,6 +662,15 @@ body {
 .email-logo{
     height: 48px;
     width: 45px;
+    margin-left: 10px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.github-logo{
+    height: 45px;
+    width: 40px;
     margin-left: 10px;
     background-size: contain;
     background-position: center;
