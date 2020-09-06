@@ -8,6 +8,12 @@ portfolioList = [
         "BackgroundImage" : "YogaClass.jpg",
         "Route" : "lululemon",
     },
+    {
+        "Title": "This Website →",
+        "Subtitle" : "See how I coded this website from scratch.",
+        "BackgroundImage" : "websitecode.jpg",
+        "Route" : "websitecode",
+    },
 ]
 
 #Function to get list of portfolio items

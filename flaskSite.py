@@ -28,5 +28,9 @@ def contact():
 def lululemon():
     return render_template('/portfolio-items/lululemonreport.html', page_name = "Lululemon Report")
 
+@app.route("/website-code")
+def websitecode():
+    return render_template('/portfolio-items/websitecode.html', page_name = "My Website Code")
+
 if(__name__)=='__main__':
     app.run(debug = True)
