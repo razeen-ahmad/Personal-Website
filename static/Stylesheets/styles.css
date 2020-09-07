@@ -446,12 +446,18 @@ body {
     padding-right: 1em;
 }
 
-.company-label{
+.company-label, .interest-label{
     line-height: 0.3125em;
     margin-left: 0.625em;
     margin-top: 2.5em;
     display: inline-block;
     width: 100%;
+}
+
+.interest-label{
+    color: maroon;
+    text-align: center;
+    font-weight: bolder;
 }
 
 .company-label a{
@@ -464,10 +470,9 @@ body {
     color: navy;
 }
 
-.company-description{
+.company-description, .interest-description{
     display: flex;
     flex-grow: 1;
-    height: fit-content;
 }
 
 .company-logo-image{
@@ -477,12 +482,20 @@ body {
     height: 12.5em;
     width: 12.5em;
     background-size: contain;
+    background-repeat: no-repeat;
+    flex-grow: 1.5;
+}
+.interest-icon-image{
+    margin-top: 1em;
+    height: 12em;
+    width: 5em;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     flex-grow: 1.5;
 }
 
-.company-description-text{
+.company-description-text, .interest-description-text{
     margin-right: 0.625em;
     margin-top: 0em;
     margin-left: 1.875em;
@@ -635,15 +648,15 @@ body {
         margin-bottom: 0.625em;
     }
 
-    .company-logo-image{
+    .company-logo-image, .interest-icon-image{
         width: 100%;
     }
 
-    .company-description{
+    .company-description, .interest-description{
         display: flex;
         flex-direction: column;
     }
-    .company-description-text{
+    .company-description-text, .interest-description-text{
         width: 100%;
         height: 100%;
         margin-left: 0.625em;
