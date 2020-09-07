@@ -184,7 +184,7 @@ body {
 /* All portfolio items grid under header */
 .all-portfolio-items {
     display: grid;
-    width: 100%;
+    width: 99%;
     grid-template-columns: 1fr 1fr 1fr;/*creates grid layout with 3cols per row*/
 }
 
@@ -756,8 +756,6 @@ body {
 }
 
 @media only screen and (max-width: 769px){
-
-
     .main-home-image {
         height: 37.5em;
         width: 100%;
@@ -907,8 +905,15 @@ body {
 .pdf-navigation{
     width: 100%;
     display: flex;
-    flex-flow: wrap;
     align-items: center;
+    justify-content: center;
+}
+
+.mobile-order-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85.5%;
 }
 
 #prev-page, #next-page{
@@ -927,6 +932,16 @@ body {
     transition: all 0.4s ease 0s;
 }
 
+#prev-page{
+    width: 10.5em;
+    margin-right: 1em;
+}
+
+#next-page{
+    width: 9.5em;
+    margin-left: 1em;
+}
+
 #prev-page:hover, #next-page:hover{
     background: rgb(54, 54, 54);
     letter-spacing: 0.0625em;
@@ -943,4 +958,55 @@ canvas {
     margin-right: auto;
     border: 0.125em solid beige;
     margin-bottom: 0.625em;
+}
+
+@media only screen and (max-width: 1270px){
+    .quick-nav-link{
+        margin-top: 11%;
+    }
+
+    .pdf-viewer{
+        width: 100%;
+    }
+
+    canvas{
+        width: 100%;
+    }
+
+    .mobile-order-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .pdf-navigation{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #prev-page, #next-page{
+        text-align: center;
+        vertical-align: center;
+    }
+
+    #prev-page{
+        margin-right: 60%;
+        width: 35%;
+    }
+
+    #next-page{
+        position: relative;
+        top: -2.2em; /*36em*/
+        left: 32%;
+        width: 40%;
+        padding-top: 0.4em;
+    }
+
+    .pdf-viewer span.page-info{
+        margin-top: 1em;
+        display: inline-block;
+        text-align: center;
+    }
+
 }
