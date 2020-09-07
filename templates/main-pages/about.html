@@ -1,7 +1,7 @@
 {% extends "mastertemplate.html" %}
 
 {% block page_content %}
-    <div class="profile-content">
+    <div class="profile-content" style="width: 99%;">
         <div class="profile-image">
             <img src ="/static/Images/AboutShot.jpg">
         </div>
@@ -21,32 +21,26 @@
                 You can find these projects under the portfolio tab!
             </p>
             <p>Below, you will find my resumé outlining my most recent qualifications.</p>
-            <hr style="width: 75%; color: navy;">
+            <hr style="width: 75%; color: navy; border: 0; height: 1.5px; background-color: navy;">
         </div>
     </div>
-    <div class="all-resume-content">
+    <div class="all-resume-content" style="width: 99%;">
         <div class="about-heading">
             <br><h1>Resumé</h1>
-            <hr>
+            <hr style="color: beige; border: 0; height: 1.5px; background-color: beige;">
         </div>
         <h2 style="color:navy; margin-top: 30px; margin-left: 10px; margin-bottom: 0px;">Education</h2>
-        <hr style="color: navy; max-width: 250px; margin: 0px; margin-top: 0px;">
+        <hr style="color: navy; max-width: 250px; margin: 0px; margin-top: 0px; border: 0; height: 1.5px; background-color: navy;">
         <h3 style="color: maroon; margin-top: 20px; text-align: center; line-height: 23px;">University of Minnesota - Minneapolis, MN <br> (2019 - 2023)</h3>
         <div class="education-awards">
-            <b>Cumulative GPA:</b><i> 3.96 / 4.0</i>
-            <br>
-            <b>SAT Score: </b><i>1550 / 1600</i> 
-            &nbsp;&nbsp;&nbsp;<b>ACT Score: </b><i>35 / 36</i>
-            <br>
-            <b>Notable Achievements: </b><i>Dean's List (all semesters), University Honors Student, Commended National Merit Scholar,
-                <br><span style="margin-left: 195px">National AP Scholar, Minnesota All-State Orchestra Member</span></i>
+            <span style="display: inline-block;"> <b>Notable Achievements:</b><i> Commended National Merit Scholar, Dean's List (all semesters), University Honors Student,
+                National AP Scholar, Minnesota All-State Orchestra Member</i></span>
         </div>
         <div class="education-content">
             <div class="carlson-content">
                 <div class="school-header"><u><b>Curtis L. Carlson School of Management</b></u></div>
                 <div class="school-content">
                     <b>Major:</b> <i>Finance</i><br>
-                    <b>Technical GPA:</b> <i>4.0 / 4.0</i><br>
                     <b>Relevant Coursework:</b> <i>Financial Accounting & Fundamentals, Supply Chain & Operations, Human Resource Management and Strategy in Australia</i>
                 </div>
             </div>
@@ -54,7 +48,6 @@
                 <div class="school-header"><u><b>College of Science and Engineering</b></u></div>
                 <div class="school-content">
                     <b>Major:</b> <i>Computer Science</i><br>
-                    <b>Technical GPA:</b> <i>4.0 / 4.0</i><br>
                     <b>Relevant Coursework:</b> <i>Algorithms & Data Structures, Machine Architecture & Organization, Discrete Math, Linear Algebra, Analysis of Numrical Algorithms, Probability & Statistics</i>
                 </div>
             </div>
@@ -63,11 +56,12 @@
         </div>
         <br>
         <h2 style="color:navy; margin-top: 0px; margin-left: 10px; margin-bottom: 0px;">Experience</h2>
-        <hr style="color: navy; max-width: 250px; margin: 0px; margin-top: 0px;">
+        <hr style="color: navy; max-width: 250px; margin: 0px; margin-top: 0px; border: 0; height: 1.5px; background-color: navy;">
         <div class="experience-content">
             <div class="encephalo-content">
                 <div class="company-label">
-                    <h3 style="color: maroon; margin-top: 20px; text-align:left;">Equity Research Intern <span class="experience-date">(June 2020 - December 2020)</span></h3>
+                    <h3 style="color: maroon; margin-top: 20px; ">Equity Research Intern</h3> 
+                    <h3 style="color: maroon;">(June 2020 - December 2020)</h3>
                     <a href="https://www.encephaloinvestments.com/" target="_blank">↗Encephalo Investments, Minneapolis, MN</a>
                 </div>
                 <div class="company-description">
@@ -89,7 +83,8 @@
             </div>
             <div class="umnsvp-content">
                 <div class="company-label">
-                    <h3 style="color: maroon; margin-top: 50px; text-align:left;">Financial Operations Team <span class="experience-date">(September 2019 - May 2020)</span></h3>
+                    <h3 style="color: maroon; margin-top: 50px; text-align:left;">Financial Operations Team </h3>
+                    <h3 style="color: maroon;">(September 2019 - May 2020)</h3>
                     <a href="https://umnsvp.org/" target="_blank">↗UMN Solar Vehicle Project, Minneapolis, MN</a>
                 </div>
                 <div class="company-description">
@@ -109,12 +104,13 @@
             </div>
             <div class="stc-content">
                 <div class="company-label">
-                    <h3 style="color: maroon; margin-top: 20px; text-align:left;">Gift Shop Associate <span class="experience-date">(June 2016 - April 2019)</span></h3>
+                    <h3 style="color: maroon; margin-top: 20px; text-align:left;">Gift Shop Associate 
+                    <h3 style="color: maroon;">(June 2016 - April 2019)</h3>
                     <a href="https://www.centracare.com/gift-gallery/" target="_blank">↗St. Cloud Hospital, St. Cloud, MN</a>
                 </div>
                 <div class="company-description">
                     <a href="https://www.centracare.com/gift-gallery/" target="_blank"><div class="company-logo-image"
-                        style="background-image: url(/static/Images/stcHospitalLogo.png); filter: brightness(55%);"></div></a>
+                        style="background-image: url(/static/Images/stcHospitalLogo.png); filter: brightness(55%); width: 15em;"></div></a>
                     <div class="company-description-text">
                         <p>The St. Cloud Hospital Gift Gallery provides hospital tenants and visitors with an assortment of flowers, treats, and other
                             gifts. All proceeds from the gift gallery go to the St. Cloud Hospital Auxiliary. Officially, this was not a paid position; 
@@ -129,12 +125,12 @@
             </div>
         </div>
         <h2 style="color:navy; margin-top: 100px; margin-left: 10px; margin-bottom: 0px;">Leadership</h2>
-        <hr style="color: navy; max-width: 250px; margin: 0px; margin-top: 0px;">
+        <hr style="color: navy; max-width: 250px; margin: 0px; margin-top: 0px; border: 0; height: 1.5px; background-color: navy;">
         <div class="leadership-content">
             <div class="hrAbroad-content">
                 <div class="leadership-header">
                     Human Resource Management and Strategy in Australia
-                    <hr style="color: maroon; width: 80%;">
+                    <hr style="color: maroon; width: 80%; border: 0; height: 1.25px; background-color: maroon;">
                 </div>
                 <div class="leadership-text">
                     <span style="color: maroon;">(Spring 2020)</span> 
@@ -148,7 +144,7 @@
             <div class="sof-content">
                 <div class="leadership-header">
                     Scholars of Finance
-                    <hr style="color: maroon; width: 80%;">
+                    <hr style="color: maroon; width: 80%; border: 0; height: 1.5px; background-color: maroon;">
                 </div>
                 <div class="leadership-text">
                     <span style="color: maroon;">(June 2020 - Present)</span> 
@@ -160,7 +156,7 @@
             </div>
         </div>
         <h2 style="color:navy; margin-top: 100px; margin-left: 10px; margin-bottom: 0px;">Skills / Competencies</h2>
-        <hr style="color: navy; max-width: 350px; margin: 0px; margin-top: 0px; margin-bottom: 40px;">
+        <hr style="color: navy; max-width: 350px; margin: 0px; margin-top: 0px; margin-bottom: 40px; border: 0; height: 1.5px; background-color: navy;">
         <div class="skills-content">
             <li>
                 <span class="skill-name">Python</span>
@@ -200,14 +196,80 @@
             </li>
         </div>
     </div>
+    <br>
+    <h2 style="color:navy; margin-top: 0px; margin-left: 10px; margin-bottom: 0px;">Interests</h2>
+    <hr style="color: navy; max-width: 250px; margin: 0px; margin-top: 0px; border: 0; height: 1.5px; background-color: navy;">
+    <div class="interests-content" style="width: 98%;">
+        <div class="sport-content">
+            <div class="interest-label">
+                <h3 style="margin-top: 20px;">Sports</h3>
+                <hr style="color: maroon; border: none; height: 0.5px; background-color: maroon; width: 40%; text-align: center;">
+            </div>
+            <div class="interest-description">
+                <div class="interest-icon-image"
+                    style="background-image: url(/static/Images/sportsicon.jpg); height: 13.5em;"></div>
+                <div class="interest-description-text">
+                    <p>
+                        From an early age, I have been infatuated with soccer. I would obsessively watch YouTube highlights of Messi, Ronaldo, and Ronaldinho
+                        and try to recreate their moves in my backyard. This love for soccer blossomed into a passion for all sports, 
+                        although I mainly follow soccer and basketball. Although sports mainly serve as a pastime, I've found it as a particularly
+                        valuable platform for building my analytical skills. By studying statistics and debating with my friends,
+                        I have enhanced my critical thinking and communication skills in ways that could not replicated elsewhere. With time, I hope
+                        to showcase these skills through various projects on this website while spending time with something I am passionate about.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="cello-content">
+            <div class="interest-label">
+                <h3 style="margin-top: 50px;">Music</h3>
+                <hr style="color: maroon; border: none; height: 0.5px; background-color: maroon; width: 40%; text-align: center;">
+            </div>
+            <div class="interest-description">
+                <div class="interest-icon-image"
+                    style="background-image: url(/static/Images/musicicon.jpg); height: 15em;"></div>
+                <div class="interest-description-text">
+                    <p>
+                        Music has always been a part of my life. Like many others, I started out by taking piano lessons. Later, 
+                        I transitioned to singing duets with my younger brother. However, after I found the cello in 5th grade, I
+                        knew I had found the instrument for me. The size and sound of the cello had me instantly hooked, and I have
+                        never looked back since. Through orchestra, I have worked and met with many talented individuals who 
+                        showed me the power of hard work, discipline, and teamwork. This culiminated during my junior year of high school, 
+                        when I auditioned and was selected for the Minnesota All-State Orchestra. 
+                        Although I do not practice like I once used to, I still play my cello on a semi-regular basis. 
+                        I find it a nice way to relax my mind and disconnect. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="trivia-content">
+            <div class="interest-label">
+                <h3 style="margin-top: 20px;">Trivia</h3>
+                <hr style="color: maroon; border: none; height: 0.5px; background-color: maroon; width: 40%; text-align: center;">
+            </div>
+            <div class="interest-description">
+                <div class="interest-icon-image"
+                    style="background-image: url(/static/Images/triviaicon.jpg); filter: brightness(55%);"></div>
+                <div class="interest-description-text">
+                    <p>
+                        Although I am by no means a trivia master, I enjoy playing trivia games with my friends and learning
+                        about random topics. With the coronavirus lockdown, many of my friends and I regularly
+                        get on a voice call to do crosswords together. These exercises have been a great way for us to stay connected
+                        as well as develop our problem solving skills. Although most trivia topics have very little relevance in my 
+                        day-to-day life, I am always curious to learn more about the world.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="about-heading" style="margin-top: 100px;">
         <br><h1>Want to see more?</h1>
-        <hr><br>
+        <hr style="border: 0; height: 1.5px; background-color: beige;"><br>
         <div class="nav-buttons">
-            <div class="project-button">
+            <div class="project-button" style="display: inline-block;">
                 <a href="{{ url_for('portfolio') }}">See My Projects →</a>
             </div>
-            <div class="contact-button">
+            <div class="contact-button" style="display: inline-block;">
                 <a href="{{ url_for('contact') }}">Contact Me →</a>
             </div>
         </div>
