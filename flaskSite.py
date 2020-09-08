@@ -1,10 +1,17 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, request, redirect
 from portfolioitems import *
 
 app = Flask(__name__)
 app.static_folder = 'static'
 
 portfolioItemList = getPortfolio()
+
+@app.before_request
+def enforceHttpsInHeroku():
+  if request.headers.get('X-Forwarded-Proto') == 'http':
+    url = request.url.replace('http://', 'https://', 1)
+    code = 301
+    return redirect(url, code=code)
 
 
 @app.route("/home")
