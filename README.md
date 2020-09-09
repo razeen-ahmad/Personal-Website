@@ -9,7 +9,7 @@ I kept this in a separate file to reduce clutter in the Flask application file.
 *Procfile* holds the definitions for commands that are run upon starting up the app. Currently, this only helps defines the Flask app's web server.
 
 
-## Templates folder
+## Templates Folder
 This folder houses all the HTML code for each website. *mastertemplate.html* has the basic framework from which all other pages are built from. After creating 
 the header and footer of each page, I created a block for the rest of the webpage body to be defined by each page.The **main-pages** folder
 houses the html code for the main tabs of the website (Home, About, Portfolio, & Contact). 
