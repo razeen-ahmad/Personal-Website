@@ -691,6 +691,14 @@ body {
     background-position: center;
 }
 
+.main-home-image-animation, .project-section-image-animation, .contact-section-image-animation{
+    animation: fadeIn ease 4s;
+    -webkit-animation: fadeIn ease 4s;
+    -moz-animation: fadeIn ease 4s;
+    -o-animation: fadeIn ease 4s;
+    -ms-animation: fadeIn ease 4s;
+}
+
 .greeting-text{
     position: absolute;
     top: 2.4em;
@@ -699,6 +707,15 @@ body {
     font-size: xxx-large;
     font-weight: 800;
     line-height: 1.9em;
+}
+
+.greeting-text-animation, .project-section-text-animation, .contact-section-text-animation{
+    opacity: 0;
+    animation: fadeIn 5s ease 1s forwards;
+    -webkit-animation: fadeIn 5s ease 1s forwards;
+    -moz-animation: fadeIn 5s ease 1s forwards;
+    -o-animation: fadeIn 5s ease 1s forwards;
+    -ms-animation: fadeIn 5s ease 1s forwards;
 }
 .greeting-text a{
     font-size: x-large;
@@ -1021,4 +1038,51 @@ canvas {
         text-align: center;
     }
 
+}
+
+
+/* animation styles */
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+@-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+@-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+@-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+@-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
 }

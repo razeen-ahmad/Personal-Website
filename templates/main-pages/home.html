@@ -3,23 +3,23 @@
 {% block page_content %}
     <div class="all-home-items" style="width: 100%;">
         <div class="greeting-image">
-            <div class="main-home-image"
+            <div class="main-home-image main-home-image-animation"
                 style= "background-image:url(/static/Images/HomePage.jpg);" ></div>
-            <div class="greeting-text">
+            <div class="greeting-text greeting-text-animation">
                 <h1>Hi. I'm<br>Razeen.</h1><br>
                 <a href="{{ url_for('about') }}">About Me →</a>
             </div>
         </div>
         <div class="project-section">
-            <div class="project-section-image" style="background-image: url(/static/Images/working.jpg);"></div>
-            <div class="project-section-text">
+            <div class="project-section-image project-section-image-animation" style="background-image: url(/static/Images/working.jpg);"></div>
+            <div class="project-section-text project-section-text-animation">
                 <h1>Check Out What I've Been Working On!</h1><br>
                 <a href="{{ url_for('portfolio') }}" style="width: 15.625em;">My Projects →</a>
             </div>
         </div>
         <div class="contact-section">
-            <div class="contact-section-image" style="background-image: url(/static/Images/talking.jpg);"></div>
-            <div class="contact-section-text">
+            <div class="contact-section-image contact-section-image-animation" style="background-image: url(/static/Images/talking.jpg);"></div>
+            <div class="contact-section-text contact-section-text-animation">
                 <h1>Have Any Questions?</h1><br>
                 <a href="{{ url_for('contact') }}" style="width: 17.1875em;">Let's Connect →</a>
             </div>
