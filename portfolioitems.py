@@ -3,6 +3,12 @@
 
 portfolioList = [
     {
+        "Title": "VTI Fund Outlook →",
+        "Subtitle" : "Understanding how we recover from COVID-19 through a combination of technical analyses and macroeconomic factors.",
+        "BackgroundImage" : "covideconomy.jpg",
+        "Route" : "vtifund",
+    },
+    {
         "Title": "This Website →",
         "Subtitle" : "See how I coded this website from scratch.",
         "BackgroundImage" : "websitecode.jpg",

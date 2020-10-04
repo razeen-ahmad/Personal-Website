@@ -35,6 +35,11 @@ def contact():
 def lululemon():
     return render_template('/portfolio-items/lululemonreport.html', page_name = "Lululemon Report")
 
+@app.route("/vti-covid-outlook")
+def vtifund():
+    return render_template('/portfolio-items/vtifundreport.html', page_name = "VTI Fund Report")
+
+
 @app.route("/website-code")
 def websitecode():
     return render_template('/portfolio-items/websitecode.html', page_name = "My Website Code")
