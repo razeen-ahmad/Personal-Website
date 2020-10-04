@@ -183,7 +183,7 @@ body {
 /* All portfolio items grid under header */
 .all-portfolio-items {
     display: grid;
-    width: 99%;
+    width: 100%;
     grid-template-columns: 1fr 1fr 1fr;/*creates grid layout with 3cols per row*/
 }
 
