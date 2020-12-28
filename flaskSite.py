@@ -39,6 +39,10 @@ def lululemon():
 def vtifund():
     return render_template('/portfolio-items/vtifundreport.html', page_name = "VTI Fund Report")
 
+@app.route("/thomas-irving-trade-analysis")
+def itvki():
+    return render_template('/portfolio-items/isaiahVkyriereport.html', page_name = "Thomas-Irving Stat Analysis")
+
 
 @app.route("/website-code")
 def websitecode():

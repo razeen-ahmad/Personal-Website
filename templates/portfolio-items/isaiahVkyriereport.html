@@ -1,0 +1,117 @@
+{% extends "posttemplate.html" %}
+
+{% block post_title %} Isaiah Thomas Vs. Kyrie Irving Stat Analysis {% endblock post_title %}
+{%block post_date %} December 2020 {% endblock post_date %}
+
+{% block portfolio_content %}
+<p style="color: black; padding-right: 5%; padding-left: 5%; text-align: center;"><!--Can reduce margin-bttom based on paragraph length.-->
+    As an avid basketball fan, I was constantly reading about advanced analytics and how they were transforming
+    the NBA. The meteoric rise of players like Stephen Curry and James Harden is the epitome of advanced statistical 
+    analysis in action. Now, having some statistical and programming knowledge, I wanted to see how much I could do 
+    on my own. The report below walks through the various insights I was able to pull from the data behind the Kyrie Irving - Isaiah Thomas Trade. 
+    I analyzed the data using the Pandas data analysis library and Jupyter Notebook. All data was collected from 
+    <a href="https://www.basketball-reference.com/" target="_blank" style="color: rgb(0, 0, 255);">basketball-reference.</a>
+    You can see
+    <a href="https://github.com/razeen-ahmad/Isaiah-Thomas-vs.-Kyrie-Irving-Report/blob/master/Isaiah%20Thomas%20vs.%20Kyrie%20Irving.ipynb" target="_blank" style="color: rgb(0, 0, 255);">the notebook here.</a>
+    Explore the notebook, read the report, and let me know what you think! I am always interested in talking basketball.
+</p>
+    <div class="pdf-viewer">
+        <span class="page-info">
+            Page <span id="page-num" style="font-weight: bold;"></span> of 
+            <span id="page-count" style="font-weight: bold;"></span>
+        </span>
+        <div class="pdf-navigation">
+            <button class="btn" id="prev-page" style="margin-left: 5%;">
+                ← Prev. Page
+            </button>
+            <div class="mobile-order-container">
+                <canvas id="pdf-render"></canvas>
+                <button class="btn" id="next-page" style="margin-right: 5%;">
+                    Next Page →
+                </button>
+            </div>
+        </div>
+        <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+        <script>
+            const url = 'static/PDFfiles/Isaiah Thomas vs. Kyrie Irving Analysis.pdf';
+
+            let pdfDoc = null,
+                pageNum = 1,
+                pageIsRendering = false
+                pageNumIsPending = null;
+            
+            //Get pdf file into canvas
+            const scale = 1.2, //size of pdf
+                canvas = document.querySelector('#pdf-render'),
+                ctx = canvas.getContext('2d');
+            
+            //Render the page
+            const renderPage = num => {
+                pageIsRendering = true;
+
+                //get page
+                pdfDoc.getPage(num).then(page => {
+                    //Set scale for document
+                    const viewport = page.getViewport({ scale });
+                    canvas.height = viewport.height;
+                    canvas.width = viewport.width;
+
+                    const renderCtx = {
+                        canvasContext: ctx,
+                        viewport
+                    }
+                    page.render(renderCtx).promise.then(() => {
+                        pageIsRendering = false;
+
+                        if(pageNumIsPending !== null) {
+                            renderPage(pageNumIsPending);
+                            pageNumIsPending = null;
+                        }
+                    });
+
+                    //Output current page
+                    document.querySelector('#page-num').textContent = num;
+                });
+            };
+
+            //Check for pages rendering
+            const queueRenderPage = num => {
+                if(pageIsRendering) {
+                    pageNumIsPending = num;
+                }
+                else {
+                    renderPage(num);
+                } 
+            }
+
+            //Show previous page
+            const showPrevPage = () => {
+                if(pageNum <= 1){
+                    return;
+                }
+                pageNum--;
+                queueRenderPage(pageNum);
+            }
+
+            //Show next page
+            const showNextPage = () => {
+                if(pageNum >= pdfDoc.numPages){
+                    return;
+                }
+                pageNum++;
+                queueRenderPage(pageNum);
+            }
+
+            //Get document 
+            pdfjsLib.getDocument(url).promise.then(pdfDoc_ =>{
+                pdfDoc = pdfDoc_;
+                document.querySelector('#page-count').textContent = pdfDoc.numPages;
+                renderPage(pageNum)
+            });
+            //Button functionality
+            document.querySelector('#prev-page').addEventListener('click', showPrevPage);
+            document.querySelector('#next-page').addEventListener('click', showNextPage);
+
+        </script>
+    </div>
+{% endblock portfolio_content %}

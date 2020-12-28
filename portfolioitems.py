@@ -3,6 +3,12 @@
 
 portfolioList = [
     {
+        "Title": "NBA Stat Analysis →",
+        "Subtitle" : "A look at the stats behind the Isaiah Thomas-Kyrie Irving trade using Jupyter Notebook",
+        "BackgroundImage" : "basketball.jpg",
+        "Route" : "itvki",
+    },
+    {
         "Title": "VTI Fund Outlook →",
         "Subtitle" : "Understanding how we recover from COVID-19 through a combination of technical analyses and macroeconomic factors.",
         "BackgroundImage" : "covideconomy.jpg",
