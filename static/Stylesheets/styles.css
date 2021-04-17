@@ -524,7 +524,7 @@ body {
 }
 
 .leadership-text{
-    text-align: justify;
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
@@ -573,11 +573,11 @@ body {
     width: 85%;
 }
 
-.stats, .java {
+.java {
     width: 73%;
 }
 
-.html, .cprogram {
+.agile, .stack, .cprogram {
     width: 55%;
 }
 
