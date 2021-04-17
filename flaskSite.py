@@ -43,10 +43,13 @@ def vtifund():
 def itvki():
     return render_template('/portfolio-items/isaiahVkyriereport.html', page_name = "Thomas-Irving Stat Analysis")
 
-
 @app.route("/website-code")
 def websitecode():
     return render_template('/portfolio-items/websitecode.html', page_name = "My Website Code")
+
+@app.route("/bballplayersearch")
+def bballplayersearch():
+    return redirect("http://bballplayersearch.herokuapp.com/")
 
 if(__name__)=='__main__':
     app.run(debug = True)

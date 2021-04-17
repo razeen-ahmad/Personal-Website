@@ -3,6 +3,12 @@
 
 portfolioList = [
     {
+        "Title": "Full Stack NBA Search →",
+        "Subtitle" : "A full stack app built with Next.js, MongoDB, and Chakra-UI to search for NBA players",
+        "BackgroundImage" : "bballplayers.jpeg",
+        "Route" : "bballplayersearch",
+    },
+    {
         "Title": "NBA Stat Analysis →",
         "Subtitle" : "A look at the stats behind the Isaiah Thomas-Kyrie Irving trade using Jupyter Notebook",
         "BackgroundImage" : "basketball.jpg",
