@@ -51,5 +51,9 @@ def websitecode():
 def bballplayersearch():
     return redirect("http://bballplayersearch.herokuapp.com/")
 
+@app.route("/semesterplanningapp")
+def semesterplanningtool():
+    return render_template('/portfolio-items/semesterplanningtool.html', page_name = "Java Semester Planning Tool")
+
 if(__name__)=='__main__':
     app.run(debug = True)

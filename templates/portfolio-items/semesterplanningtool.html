@@ -1,0 +1,24 @@
+{% extends "posttemplate.html" %}
+
+{% block post_title %} Java Semester Planning Tool {% endblock post_title %}
+{%block post_date %} June 2021 {% endblock post_date %}
+
+{% block portfolio_content %}
+<p style="color: black; padding-right: 5%; padding-left: 5%; text-align: center;"><!--Can reduce margin-bttom based on paragraph length.-->
+    This is a java desktop application made using Java, Gradle, and the Swing GUI Library in Java. This application
+    works with Google's OAuth API to add recurring class/lecture events to the user's Google Calendar, as well as 
+    add deadlines in Google Tasks. A demo video can be viewed below or by 
+    <a href="https://youtu.be/Skric_3_g-c" target="_blank" style="color: rgb(0, 0, 255);">following this link</a>.
+    You can view the public code behind the application
+    <a href="https://github.com/razeen-ahmad/Semester-Planning-Tool" target="_blank" style="color: rgb(0, 0, 255);">
+        in this repository</a>.
+    If you have any questions or comments, let me know!
+</p>
+<div style="margin: auto; position: relative; overflow: hidden; width: 100%; padding-top: 56.25%;">
+    <iframe width="533" height="400"
+        src="https://youtu.be/Skric_3_g-c"
+        style="position: absolute; top: 0; left: 10%; bottom: 0; right: 10%; width: 80%; height: 100%;"
+    >
+    </iframe> 
+</div>
+{% endblock portfolio_content %}

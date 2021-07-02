@@ -3,6 +3,12 @@
 
 portfolioList = [
     {
+        "Title": "Semester Planning Tool →",
+        "Subtitle" : "Java desktop application that helps users plan out their semesters in the Google Suite.",
+        "BackgroundImage" : "planner.jpg",
+        "Route" : "semesterplanningtool",
+    },
+    {
         "Title": "Full Stack NBA Search →",
         "Subtitle" : "A full stack app built with Next.js, MongoDB, and Chakra-UI to search for NBA players",
         "BackgroundImage" : "bballplayers.jpeg",
