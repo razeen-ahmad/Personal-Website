@@ -1,6 +1,8 @@
 # Personal-Website
-This is the repository for my [personal website](https://www.razeenahmad.com). This was built using the Python Flask micro web framework 
+This is the repository for my personal website. This was built using the Python Flask micro web framework 
 and was my first time fully utilizing git for a coding project.
+
+Note: This website is no longer hosted or maintained anywhere.
 
 ## Flask Application
 The Flask application is defined in *flaskSite.py*. Basic information for each portfolio item is held in *portfolioitems.py*. 
@@ -18,5 +20,3 @@ The code for these pages is found under the **portfolio-items** folder.
 
 ## Static Folder
 The static folder houses all static content of my website. This includes all images, PDF files, and CSS stylesheets.  
-
-This website is fully deployed using the Heroku cloud application platform.
